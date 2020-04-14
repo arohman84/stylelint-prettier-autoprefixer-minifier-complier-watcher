@@ -1,0 +1,40 @@
+{
+	"extends": ["stylelint-config-idiomatic-order", "stylelint-prettier/recommended"],
+	"plugins": [
+		"stylelint-prettier",
+		"stylelint-declaration-use-variable",
+		"stylelint-no-unsupported-browser-features",
+		"stylelint-high-performance-animation"
+	],
+	"rules": {
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": ["extends", "ignores"]
+			}
+		],
+		"unit-no-unknown": true,
+		"property-no-unknown": true,
+		"selector-pseudo-element-no-unknown": true,
+		"shorthand-property-no-redundant-values": true,
+		"value-no-vendor-prefix": true,
+		"selector-max-class": 3,
+		"indentation": "tab",
+		"number-leading-zero": "always",
+		"color-no-invalid-hex": true,
+		"function-calc-no-invalid": true,
+		"function-calc-no-unspaced-operator": true,
+		"prettier/prettier": true,
+		"order/order": [
+			"custom-properties",
+			"declarations"
+		],
+		"sh-waqar/declaration-use-variable": [
+			["/color/", "font-family", "font-size", "background-color", "width", "max-width", "min-width", { 
+				"ignoreValues": ["transparent", "inherit", "/regexForspecialFunc/"] 
+			}]
+		],
+		"plugin/no-unsupported-browser-features": true,
+		"plugin/no-low-performance-animation-properties": true
+	}
+}

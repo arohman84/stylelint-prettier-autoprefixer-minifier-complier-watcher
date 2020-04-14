@@ -1,7 +1,7 @@
 {
-  "name": "alagasdotnet",
+  "name": "scss compiler",
   "version": "1.0.0",
-  "description": "frontend development for alagasdotnet",
+  "description": "frontend development scss compiler",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -37,12 +37,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soragan/alagasdotnet.git"
+    "url": "git+https://github.com/caberg/stylelint-prettier-autoprefixer-minifier-complier-watcher.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/soragan/alagasdotnet/issues"
+    "url": "https://github.com/caberg/stylelint-prettier-autoprefixer-minifier-complier-watcher/issues"
   },
-  "homepage": "https://github.com/soragan/alagasdotnet#readme"
+  "homepage": "https://github.com/caberg/stylelint-prettier-autoprefixer-minifier-complier-watcher#readme"
 }

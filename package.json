@@ -1,0 +1,48 @@
+{
+  "name": "alagasdotnet",
+  "version": "1.0.0",
+  "description": "frontend development for alagasdotnet",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "browserslist": "^4.11.1",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "prettier": "2.0.4",
+    "stylelint": "^13.3.2",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-use-variable": "^1.7.2",
+    "stylelint-high-performance-animation": "^1.5.0",
+    "stylelint-no-unsupported-browser-features": "^4.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-prettier": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --source-map alagas/web --watch alagas/web/scss -o alagas/web --output-style expanded --indent-type tab",
+    "clean": "rimraf scss",
+    "compile": "node-sass --output-style=expanded --indent-type=tab --indent-width=1 --source-map=true alagas/web/scss/custom.scss alagas/web/custom.css",
+    "prefix": "postcss alagas/web/custom.css --use=autoprefixer --map=false --output=alagas/web/custom.css",
+    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output alagas/web/custom.min.css alagas/web/custom.css",
+    "dev": "npm run compile -- --watch",
+    "build": "npm run clean && npm run compile && npm run prefix && npm run minify"
+  },
+  "browserslist": [
+    "last 2 version"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soragan/alagasdotnet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soragan/alagasdotnet/issues"
+  },
+  "homepage": "https://github.com/soragan/alagasdotnet#readme"
+}
